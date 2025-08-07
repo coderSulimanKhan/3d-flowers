@@ -8,11 +8,11 @@ const SnowDropModel = () => {
   const snowDropRef = useRef();
 
   // import materials
-  const snowDropMaterials = useLoader(MTLLoader, "/flowers/snow_drop/snow_drop.mtl");
+  const snowDropMaterials = useLoader(MTLLoader, "/3d-flowers/flowers/snow_drop/snow_drop.mtl");
   snowDropMaterials.preload();
 
   // import model
-  const snowDropObj = useLoader(OBJLoader, "/flowers/snow_drop/snow_drop.obj", (obj) => {
+  const snowDropObj = useLoader(OBJLoader, "/3d-flowers/flowers/snow_drop/snow_drop.obj", (obj) => {
     obj.setMaterials(snowDropMaterials);
   });
 

@@ -5,16 +5,16 @@ import Loading from "../Loading";
 
 function FlowerModel() {
   const flowerRef = useRef();
-  const obj = useFBX("/flowers/rose/rose.fbx");
+  const obj = useFBX("/3d-flowers/flowers/rose/rose.fbx");
 
   // set the position
   obj.position.set(0, -4.5, 0);
   obj.rotation.set(Math.PI / 8, Math.PI / 6, 0);
 
   // textures
-  const stem = useTexture("/flowers/rose/stem.jpg");
-  const leaves = useTexture("/flowers/rose/leaves.jpg");
-  const petals = useTexture("/flowers/rose/petals.jpg");
+  const stem = useTexture("/3d-flowers/flowers/rose/stem.jpg");
+  const leaves = useTexture("/3d-flowers/flowers/rose/leaves.jpg");
+  const petals = useTexture("/3d-flowers/flowers/rose/petals.jpg");
 
   obj.traverse((child) => {
     if (child.isMesh) {

@@ -6,12 +6,12 @@ import Loading from '../Loading';
 
 const TulipModel = () => {
   // import materials
-  const tulipMaterials = useLoader(MTLLoader, "/flowers/tulip/tulip.mtl");
+  const tulipMaterials = useLoader(MTLLoader, "/3d-flowers/flowers/tulip/tulip.mtl");
   tulipMaterials.preload();
 
   // import 3d model
   const tulipRef = useRef();
-  const tulipObj = useLoader(OBJLoader, "/flowers/tulip/tulip.obj", (obj) => {
+  const tulipObj = useLoader(OBJLoader, "/3d-flowers/flowers/tulip/tulip.obj", (obj) => {
     obj.setMaterials(tulipMaterials);
   });
 

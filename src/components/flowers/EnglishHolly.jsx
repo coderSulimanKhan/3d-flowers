@@ -8,11 +8,11 @@ const EnglishHollyModel = () => {
   const englishHollyRef = useRef();
 
   // import materials
-  const englishHollyMaterials = useLoader(MTLLoader, "/flowers/english_holly/english_holly.mtl");
+  const englishHollyMaterials = useLoader(MTLLoader, "/3d-flowers/flowers/english_holly/english_holly.mtl");
   englishHollyMaterials.preload();
 
   // import model and apply textures
-  const englishHollyObj = useLoader(OBJLoader, "/flowers/english_holly/english_holly.obj", (obj) => {
+  const englishHollyObj = useLoader(OBJLoader, "/3d-flowers/flowers/english_holly/english_holly.obj", (obj) => {
     obj.setMaterials(englishHollyMaterials);
   });
 

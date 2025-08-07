@@ -6,12 +6,12 @@ import Loading from '../Loading';
 
 const CrocusModel = () => {
   // import materials
-  const crocusMaterials = useLoader(MTLLoader, "/flowers/crocus/crocus.mtl");
+  const crocusMaterials = useLoader(MTLLoader, "/3d-flowers/flowers/crocus/crocus.mtl");
   crocusMaterials.preload();
 
   // import 3d model
   const crocusRef = useRef();
-  const crocusObj = useLoader(OBJLoader, "/flowers/crocus/crocus.obj", (obj) => {
+  const crocusObj = useLoader(OBJLoader, "/3d-flowers/flowers/crocus/crocus.obj", (obj) => {
     obj.setMaterials(crocusMaterials);
   });
 

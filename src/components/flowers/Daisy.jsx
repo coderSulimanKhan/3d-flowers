@@ -7,11 +7,11 @@ import { OrbitControls } from '@react-three/drei';
 const DaisyModel = () => {
   const daisyRef = useRef();
   // import materials
-  const daisyMaterials = useLoader(MTLLoader, "/flowers/daisy/materials.mtl");
+  const daisyMaterials = useLoader(MTLLoader, "/3d-flowers/flowers/daisy/materials.mtl");
   daisyMaterials.preload();
 
   // import 3d model
-  const daisyObj = useLoader(OBJLoader, "/flowers/daisy/daisy.obj", (obj) => {
+  const daisyObj = useLoader(OBJLoader, "/3d-flowers/flowers/daisy/daisy.obj", (obj) => {
     obj.setMaterials(daisyMaterials);
   });
 

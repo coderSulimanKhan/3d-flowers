@@ -6,12 +6,12 @@ import Loading from "../Loading";
 
 const DaffodilModel = () => {
   // import materials
-  const daffodilMaterials = useLoader(MTLLoader, "/flowers/daffodil/daffodil.mtl");
+  const daffodilMaterials = useLoader(MTLLoader, "/3d-flowers/flowers/daffodil/daffodil.mtl");
   daffodilMaterials.preload();
 
   // import model
   const daffodilRef = useRef();
-  const daffodilObj = useLoader(OBJLoader, "/flowers/daffodil/daffodil.obj", (obj) => {
+  const daffodilObj = useLoader(OBJLoader, "/3d-flowers/flowers/daffodil/daffodil.obj", (obj) => {
     obj.setMaterials(daffodilMaterials);
   });
 
