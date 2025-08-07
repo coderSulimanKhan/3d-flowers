@@ -36,8 +36,8 @@ const HomePage = ({ theme }) => {
         return 0;
     }
   }
-  return (
-    <section className={`min-h-[639px] flex flex-col lg:flex-row items-center justify-evenly ${theme === "dark" ? "bg-zinc-900" : "bg-zinc-100"}`}>
+  return ( 
+    <section className={`min-h-[95vh] lg:min-h-[639px] lg:h-[95vh] flex flex-col lg:flex-row items-center justify-evenly ${theme === "dark" ? "bg-zinc-900" : "bg-zinc-100"}`}>
       <div className="flex flex-col gap-3">
         <h1 className={`text-4xl bg-gradient-to-r from-green-400 via-orange-400 to-orange-900 bg-clip-text text-transparent`}>Where petals bloom, <br />beauty whispers</h1>
         <p className={`text-sm ${theme === "dark" ? "text-zinc-100" : "text-zinc-900"}`}>Explore our 3D garden and let your senses blossom.</p>

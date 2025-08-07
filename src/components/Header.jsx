@@ -48,8 +48,8 @@ const Header = ({ theme, toggleTheme }) => {
         </ul>
       </div>
       <div className="flex gap-3 items-center justify-center">
-        <button onClick={toggleSearchBar} className={`hidden md:block text-xl transition duration-300 cursor-pointer hover:text-yellow-600 ${theme === "dark" ? "text-zinc-100" : "text-zinc-900"}`}><FaSearch /></button>
-        <button onClick={toggleTheme} className={`hidden md:block text-xl transition duration-300 cursor-pointer hover:text-yellow-600 ${theme === "dark" ? "text-zinc-100" : "text-zinc-900"}`}>{theme === "dark" ? <FaMoon /> : <FaSun />}</button>
+        <button onClick={toggleSearchBar} className={`text-xl transition duration-300 cursor-pointer hover:text-yellow-600 ${theme === "dark" ? "text-zinc-100" : "text-zinc-900"}`}><FaSearch /></button>
+        <button onClick={toggleTheme} className={`text-xl transition duration-300 cursor-pointer hover:text-yellow-600 ${theme === "dark" ? "text-zinc-100" : "text-zinc-900"}`}>{theme === "dark" ? <FaMoon /> : <FaSun />}</button>
         <button onClick={toggleSideBar} className={`md:hidden text-2xl transition duration-300 cursor-pointer hover:text-yellow-600 ${theme === "dark" ? "text-zinc-100" : "text-zinc-900"}`}>{!isSideBarOpen ? <FiMenu /> : <AiOutlineClose />}</button>
       </div>
       {
