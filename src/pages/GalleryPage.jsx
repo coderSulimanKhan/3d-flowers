@@ -48,7 +48,7 @@ const GalleryPage = ({ theme }) => {
   return (
     <section className={`w-full min-h-[100vh] relative top-[10vh] mb-[10vh] ${theme == "dark" ? "bg-zinc-900" : "bg-zinc-100"}`}>
       <h1 className="text-center text-3xl font-semibold bg-gradient-to-r from-orange-950 via-orange-500 to-orange-100 bg-clip-text text-transparent">Flowers Gallery</h1>
-      <div style={{ gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))" }} className="w-full h-full p-5 grid gap-3">
+      <div style={{ gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))" }} className="w-full h-full p-5 grid gap-3">
         {
           newFlowers.length < 1 ? (
             flowers.map((flower, index) => (
