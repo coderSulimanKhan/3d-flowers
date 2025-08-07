@@ -29,7 +29,7 @@ const CrocusModel = () => {
   return <primitive object={crocusObj} ref={crocusRef} scale={0.11} />
 }
 
-const Crocus = ({isOrbitControls}) => {
+const Crocus = ({ isOrbitControls }) => {
   return (
     <Canvas>
       <Suspense fallback={<Loading />}>
