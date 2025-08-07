@@ -24,7 +24,7 @@ const Header = ({ theme, toggleTheme }) => {
     <div className={`fixed w-full flex justify-around items-center shadow-lg z-20 ${theme === "dark" ? "bg-zinc-900 shadow-zinc-700" : "bg-zinc-100 shadow-zinc-400"}`}>
       <Link to={"/"}>
         <div className="flex items-center justify-center">
-          <img className="w-15" src="/assets/logo.svg" alt="Flower's Logo" />
+          <img className="w-15" src="/3d-flowers/assets/logo.svg" alt="Flower's Logo" />
           <div className={`${theme === "dark" ? "text-zinc-100" : "text-zinc-900"}`}>
             <span className="text-3xl relative right-3 font-bold">Phool</span>
             <span className="relative right-3 text-green-600">Wala</span>
